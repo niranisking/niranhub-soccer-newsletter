@@ -6,6 +6,8 @@ const request = require("request")
 
 const https = require('node:https')
 
+const PORT = "5700"
+
 
 
 app = express();
@@ -45,7 +47,7 @@ app.post("/", function(req, res ){
 
     const options = {
         method: "POST",
-        auth: "TechGuyNiran:11136c5869a55c08237e509800522c2c-us21"
+        auth: "TechGuyNiran:624247c08c379b7fe34058a1c947ae2d-us21"
     }
 
 
@@ -84,6 +86,6 @@ app.get("/", function(req, res){
 })
 
 
-app.listen(proc.env.PORT || 5700, function(){
+app.listen(PORT, function(){
     console.log("app started on port 5700...")
 })
